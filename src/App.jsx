@@ -1,10 +1,11 @@
 import React from 'react'
+import Header from './Components/Header'
 
 const App = () => {
   return (
-    <div>
-      hi
-    </div>
+    <main className='bg-primary h-screen w-full'>
+      <Header/>
+    </main>
   )
 }
 
