@@ -16,8 +16,8 @@ const Menu = () => {
                     <p className='hidden sm:block'>Menu</p>
                     <CgMenuMotion/>
             </div>
-            <div className={` ${isMenuOpen? "translate-x-0" : "translate-x-[100%]"} absolute bg-blue-100 h-screen top-0 right-0 w-[20rem] duration-200`}>
-                <button onClick={handleMenuToggle} className='border-2 border-black rounded-lg p-1 absolute right-[1rem] top-[1rem]'>
+            <div className={` ${isMenuOpen? "translate-x-0" : "translate-x-[100%]"} absolute bg-white h-screen top-0 right-0 w-[20rem] duration-200`}>
+                <button onClick={handleMenuToggle} className='border-2 border-black rounded-lg p-2 absolute right-[1rem] top-[1.5rem]'>
                     <IoMdClose/>
                 </button>
             </div>
