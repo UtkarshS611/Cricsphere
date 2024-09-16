@@ -4,7 +4,7 @@ import Menu from './Menu';
 
 const Header = () => {
     return (
-        <header className='flex justify-between items-center px-4 py-6 bg-emerald-100'>
+        <header className='flex fixed w-full justify-between items-center px-4 py-6 bg-emerald-100'>
             <div className='text-md font-bold hidden sm:block'>
                     Where Cricket <br />
                 <span className='flex items-center gap-1 ml-[12px]'>
