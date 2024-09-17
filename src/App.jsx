@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
-import Header from './Components/Header'
 import Home from './Components/Home'
+import LoginForm from './Components/Form/LoginForm';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Lenis from 'lenis'
 
 const App = () => {
@@ -21,10 +22,12 @@ const App = () => {
   })
 
   return (
-    <main className='bg-primary h-screen w-full'>
-      <Header/>
-      <Home/>
-    </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
   )
 }
 

@@ -22,17 +22,17 @@ const Menu = () => {
                 <button onClick={handleMenuToggle} className='border-2 border-black rounded-lg p-2 absolute right-[1rem] top-[1.5rem]'>
                     <IoMdClose/>
                 </button>
-                <div className='abcd flex bg-blue-100 flex-col gap-10  p-4 h-screen justify-center text-2xl font-semibold'>
-                    <a href="" className=' border-[2px] w-full border-black flex justify-center py-2 rounded-xl'>
+                <div className='abcd flex bg-white flex-col gap-10  p-4 h-screen justify-center text-2xl font-semibold'>
+                    <a href="" className=' border-[2px] border-black flex justify-center py-2 rounded-xl'>
                         Sign Up
                     </a>
-                    <a href="" className='border-[2px] w-full border-black flex justify-center py-2 rounded-xl'>
+                    <a href="" className='border-[2px]  border-black flex justify-center  py-2 rounded-xl'>
                         Home
                     </a>
-                    <a href="" className='border-[2px] w-full border-black flex justify-center py-2 rounded-xl'>
+                    <a href="" className='border-[2px]  border-black flex justify-center py-2 rounded-xl'>
                         Origins
                     </a>
-                    <a href="" className='border-[2px] w-full border-black flex justify-center py-2 rounded-xl'>
+                    <a href="" className='border-[2px]  border-black flex justify-center py-2 rounded-xl'>
                         Hall of fame
                     </a>
                 </div>
