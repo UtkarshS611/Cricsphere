@@ -10,6 +10,9 @@ export default {
         primary: "#e1e1e1",
         secondary: "#273746",
       },
+      fontFamily: {
+        primary: ["Roboto", "sans-serif"],
+      },
     },
   },
   plugins: [],
