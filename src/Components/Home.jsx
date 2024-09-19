@@ -4,14 +4,14 @@ import Cards from './Cards';
 
 const Home = () => {
   return (
-    <section className='h-[300vh]'>
+    <section className='h-[500vh]'>
       <div className='flex justify-center mt-8 font-primary'>
         <div className='px-14 py-1 rounded-full font-medium flex items-center gap-2 border-[0.5px] bg-[#e3d5ca4e] border-[#bb9457]'>
           <BsStars />
           Welcome, Utkarsh
         </div>
       </div>
-      <div className='drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] text-white tracking-wide text-4xl md:text-7xl uppercase flex flex-col items-center py-8 gap-2 md:gap-10 font-[Anton]'>
+      <div className='tracking-wide text-4xl md:text-7xl uppercase flex flex-col items-center py-8 gap-2 md:gap-10 font-[Anton]'>
         <span>
           A cricketing experience 
         </span>
@@ -36,6 +36,63 @@ const Home = () => {
           <p className='hidden sm:block'>
             In the 21st century, the introduction of Twenty20 (T20) cricket revolutionized the game, offering an even shorter and more dynamic format. The Indian Premier League (IPL), launched in 2008, became a global sensation, drawing players and fans from around the world.
           </p>
+        </div>
+      </div>
+      <div className='text-9xl text-center py-5'>
+        SELECTED HIGHLIGHTS
+      </div>
+      <div className='mt-6'>
+        <div className='grid grid-cols-2 w-[80vw] mx-auto'>
+          <div className='w-[25vw] m-auto'>
+            <img src="../public/highlights1.jpg" alt="" />
+          </div>
+          <div className='flex flex-col justify-center gap-6 px-16'>
+            <h2 className='text-5xl font-medium'>
+              The Tied Test (1960)
+            </h2>
+            <p className='text-lg tracking-wide italic'>
+              The first-ever tied Test match in cricket history occurred <br /> between Australia and the West Indies at the Brisbane <br /> Cricket Ground (Gabba) in 1960. <br /> It ended with both teams having the same score,  <br /> a rare and thrilling outcome in Test cricket.
+            </p>
+          </div>
+        </div>
+        <div className='grid grid-cols-2 w-[80vw] mx-auto'>
+          <div className='flex flex-col justify-center  gap-6 px-16'>
+            <h2 className='text-5xl font-medium'>
+              India's 1983 World Cup Win
+            </h2>
+            <p className='text-lg tracking-wide italic'>
+              India's unexpected victory in the 1983 <br /> Cricket World Cup is one of the greatest moments in the sport. <br /> Under the captaincy of Kapil Dev, <br /> India defeated the then-dominant West Indies at Lord’s, <br /> signaling the rise of Indian cricket on the global stage.
+            </p>
+          </div>
+          <div className='w-[25vw] m-auto'>
+            <img src="../public/highlights2.jpg" alt="" />
+          </div>
+        </div>
+        <div className='grid grid-cols-2 w-[80vw] mx-auto'>
+          <div className='w-[25vw] m-auto'>
+            <img src="../public/highlights3.jpg" alt="" />
+          </div>
+          <div className='flex flex-col justify-center  gap-6 px-16'>
+            <h2 className='text-5xl font-medium'>
+              2005 Ashes Series
+            </h2>
+            <p className='text-lg tracking-wide italic'>
+              The 2005 Ashes between England and Australia is considered <br /> one of the greatest Test series in cricket history. <br /> England won the series 2-1 in a closely contested battle, <br /> marking their first Ashes win in 18 years and revitalizing interest in Test cricket.
+            </p>
+          </div>
+        </div>
+        <div className='grid grid-cols-2 w-[80vw] mx-auto'>
+          <div className='flex flex-col justify-center  gap-6 px-16'>
+            <h2 className='text-5xl font-medium'>
+              Sachin's 100th International Century
+            </h2>
+            <p className='text-lg tracking-wide italic'>
+              Sachin Tendulkar became the first and only cricketer to score 100 international centuries, a landmark achievement in the history of the sport. His 100th century came against Bangladesh in 2012, cementing his legacy as one of the greatest players of all time.
+            </p>
+          </div>
+          <div className='w-[25vw] m-auto'>
+            <img src="../public/highlights4.jpg" alt="" />
+          </div>
         </div>
       </div>
     </section>
