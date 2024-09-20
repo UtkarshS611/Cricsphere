@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Router>
-      {isLoggedIn && <Header setIsLoggedIn={setIsLoggedIn} />}
+      {/* {isLoggedIn && <Header setIsLoggedIn={setIsLoggedIn} />} */}
       <Routes>
         <Route path="/" element={isLoggedIn ? <Navigate to="/home" /> : <Signup setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/home" element={isLoggedIn ? <Home /> : <Navigate to="/" />} />

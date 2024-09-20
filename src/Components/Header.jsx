@@ -5,6 +5,7 @@ import { CgMenuMotion } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
 
 
+
 const Header = ({ setIsLoggedIn }) => {
 
   const handleLogout = () => {
@@ -18,7 +19,7 @@ const Header = ({ setIsLoggedIn }) => {
     }
 
   return (
-    <header className="w-full bg-primary relative p-4 flex justify-between items-center font-primary">
+    <header className="w-full relative p-4 flex justify-between items-center font-primary z-40">
       <div className='text-md font-bold hidden sm:block'>
                     Where Cricket <br />
                 <span className='flex items-center gap-1 ml-[12px]'>

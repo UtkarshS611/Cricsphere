@@ -2,6 +2,7 @@ import React from 'react'
 import { BsStars } from "react-icons/bs";
 import Cards from './Cards';
 import { useLocation } from 'react-router-dom';
+import Header from './Header';
 
 const Home = () => {
 
@@ -10,9 +11,12 @@ const Home = () => {
 
   return (
     <section className='h-[500vh]'>
+
+      <Header/>
+
       <div className='flex justify-center mt-8 font-primary'>
-        <div className='px-14 py-1 rounded-full font-medium flex items-center gap-2 border-[0.5px] bg-[#e3d5ca4e] border-[#bb9457]'>
-          <BsStars />
+        <div className='px-14 py-2 rounded-full font-medium flex items-center gap-2 border-[0.5px] bg-[#e3d5ca4e] border-[#bb9457]'>
+          <BsStars className='text-2xl' />
           Welcome, {formData?.firstname || 'Utkarsh'}
         </div>
       </div>
