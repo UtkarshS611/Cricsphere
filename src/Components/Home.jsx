@@ -13,7 +13,7 @@ const Home = () => {
       <div className='flex justify-center mt-8 font-primary'>
         <div className='px-14 py-1 rounded-full font-medium flex items-center gap-2 border-[0.5px] bg-[#e3d5ca4e] border-[#bb9457]'>
           <BsStars />
-          Welcome, {formData?.firstname || 'Guest'}
+          Welcome, {formData?.firstname || 'Utkarsh'}
         </div>
       </div>
       <div className='tracking-wide text-4xl md:text-7xl uppercase flex flex-col items-center py-8 gap-2 md:gap-10 font-[Anton]'>
