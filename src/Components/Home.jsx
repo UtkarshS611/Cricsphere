@@ -1,14 +1,19 @@
 import React from 'react'
 import { BsStars } from "react-icons/bs";
 import Cards from './Cards';
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
+
+  const location = useLocation();
+  const formData = location.state;
+
   return (
     <section className='h-[500vh]'>
       <div className='flex justify-center mt-8 font-primary'>
         <div className='px-14 py-1 rounded-full font-medium flex items-center gap-2 border-[0.5px] bg-[#e3d5ca4e] border-[#bb9457]'>
           <BsStars />
-          Welcome, Utkarsh
+          Welcome, {formData?.firstname || 'Guest'}
         </div>
       </div>
       <div className='tracking-wide text-4xl md:text-7xl uppercase flex flex-col items-center py-8 gap-2 md:gap-10 font-[Anton]'>

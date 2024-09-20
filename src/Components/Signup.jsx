@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = ({ setIsLoggedIn }) => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
-    name: '',
+    gender: '',
+    city: '',
+    firstname: '',
+    lastname: '',
     email: '',
     password: ''
   });
+
+  const navigate = useNavigate();
 
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
@@ -14,32 +20,59 @@ const Signup = ({ setIsLoggedIn }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsLoggedIn(true); // simulate login
+    setIsLoggedIn(true);
+    navigate('/home', { state: formData });
+    console.log(formData)
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex font-primary flex-col items-center justify-center min-h-screen">
       {step === 1 && (
-        <div>
-          <h2>Step 1: Enter Name</h2>
-          <input type="text" name="name" value={formData.name} onChange={handleInput} className="border p-2" />
-          <button onClick={nextStep} className="bg-blue-500 text-white p-2">Next</button>
+        <div className='bg-white flex flex-col gap-10 px-10 py-8 rounded-xl shadow-md'>
+          <h2 className='text-center text-xl font-semibold tracking-wide'>Welcome</h2>
+          <div className='flex flex-col'>
+            <label htmlFor="gender" className='text-lg'>Gender:</label>
+            <input id='gender' type="text" name="gender" placeholder='Gender' value={formData.gender} onChange={handleInput} className="border p-2 outline-blue-500" />
+          </div>
+          <div  className='flex flex-col'>
+            <label htmlFor="City" className='text-lg'>City:</label>
+            <input id='City' type="text" name="city" placeholder='City' value={formData.city} onChange={handleInput} className="border p-2 outline-blue-500" />
+          </div>
+          <button onClick={nextStep} className="bg-blue-500 hover:bg-blue-800 rounded-md duration-200 text-white p-2">Next</button>
         </div>
       )}
       {step === 2 && (
-        <div>
-          <h2>Step 2: Enter Email</h2>
-          <input type="email" name="email" value={formData.email} onChange={handleInput} className="border p-2" />
-          <button onClick={prevStep} className="bg-gray-500 text-white p-2">Back</button>
-          <button onClick={nextStep} className="bg-blue-500 text-white p-2">Next</button>
+        <div className='bg-white flex flex-col gap-10 px-10 py-8 rounded-xl shadow-md'>
+          <h2 className='text-center text-xl font-semibold tracking-wide'>Welcome</h2>
+          <div className='flex flex-col'>
+            <label htmlFor="firstname">Firstname:</label>
+            <input id='firstname' type="text" name="firstname" placeholder='John' value={formData.firstname} onChange={handleInput} className="border p-2  outline-blue-500" />
+          </div>
+          <div className='flex flex-col'>
+            <label htmlFor="lastname">Lastname:</label>
+            <input id='lastname' type="text" name="lastname" placeholder='Doe' value={formData.lastname} onChange={handleInput} className="border p-2  outline-blue-500" />
+          </div>
+          <div className='flex flex-col'>
+            <label htmlFor="email">Email:</label>
+            <input id='email' type="email" name="email" placeholder='example@example.com' value={formData.email} onChange={handleInput} className="border px-2 pr-8 py-2 outline-blue-500" />
+          </div>
+          <div className='flex justify-between'>
+            <button onClick={prevStep} className="bg-gray-500 hover:bg-gray-800 text-white px-6 rounded-md py-2">Back</button>
+            <button onClick={nextStep} className="bg-blue-500 hover:bg-blue-800 px-6 rounded-md text-white py-2">Next</button>
+          </div>
         </div>
       )}
       {step === 3 && (
-        <div>
-          <h2>Step 3: Enter Password</h2>
-          <input type="password" name="password" value={formData.password} onChange={handleInput} className="border p-2" />
-          <button onClick={prevStep} className="bg-gray-500 text-white p-2">Back</button>
-          <button onClick={handleSubmit} className="bg-green-500 text-white p-2">Sign Up</button>
+        <div className='bg-white flex flex-col gap-10 px-10 py-8 rounded-xl shadow-md'>
+          <h2 className='text-center text-xl font-semibold tracking-wide'>Welcome</h2>
+          <div className='flex flex-col'>
+            <label htmlFor="password">Password:</label>
+            <input id='password' placeholder='Password' type="password" name="password" value={formData.password} onChange={handleInput} className="border p-2" />
+          </div>
+          <div className='flex justify-between'>
+            <button onClick={prevStep} className="bg-gray-500  hover:bg-gray-800 px-6 rounded-md text-white py-2">Back</button>
+            <button onClick={handleSubmit} className="bg-blue-500  hover:bg-blue-800 px-6 rounded-md text-white py-2">Sign Up</button>
+          </div>
         </div>
       )}
     </div>
