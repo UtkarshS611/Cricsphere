@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,4 +31,9 @@ html.lenis, html.lenis body {
 body{
     overflow-x: hidden;
     background-color: #e1e1e1;
+}
+
+.halloffame_grid > div{
+    grid-row:  var(--r);
+    grid-column:  var(--c);
 }

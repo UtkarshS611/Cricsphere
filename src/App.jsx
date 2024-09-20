@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Lenis from 'lenis'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Signup from './Components/Signup';
@@ -10,18 +10,20 @@ import Header from './Components/Header';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const lenis = new Lenis()
+  useEffect(() => {
+    const lenis = new Lenis()
 
-  lenis.on('scroll', (e) => {
-    console.log(e)
-  })
+    lenis.on('scroll', (e) => {
+      console.log(e)
+    })
 
-  function raf(time) {
-    lenis.raf(time)
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
     requestAnimationFrame(raf)
-  }
-
-  requestAnimationFrame(raf)
+    })
 
   return (
     <Router>

@@ -12,6 +12,7 @@ export default {
       },
       fontFamily: {
         primary: ["Roboto", "sans-serif"],
+        hindi: ["Gajraj One", "sans-serif"],
       },
     },
   },
