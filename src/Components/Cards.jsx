@@ -1,7 +1,5 @@
 import React from 'react'
-import Card1 from "../Assets/Card1.jpg"
-import Card2 from "../Assets/Card2.jpg"
-import Card3 from "../Assets/Card3.jpg"
+
 
 const Cards = () => {
     return (
