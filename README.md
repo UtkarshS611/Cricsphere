@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 
 Deployment:
 
-Step 1: Make sure that you are in correct folder 
-Step 2: install the node modules and dependencies by running the following command:  npm install
-Step 3 Deploy the project by running the following command: npm run dev
+- Step 1: Make sure that you are in correct folder 
+- Step 2: install the node modules and dependencies by running the following command:  npm install
+- Step 3 Deploy the project by running the following command: npm run dev
 
