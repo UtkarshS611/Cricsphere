@@ -2,6 +2,26 @@ import { useGSAP } from '@gsap/react'
 import React from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import Image1 from "../Assets/image1.jpg"
+import Image2 from "../Assets/image2.jpg"
+import Image3 from "../Assets/image3.jpg"
+import Image4 from "../Assets/image4.jpg"
+import Image5 from "../Assets/image5.jpg"
+import Image6 from "../Assets/image6.jpg"
+import Image7 from "../Assets/image7.jpg"
+import Image8 from "../Assets/image8.jpg"
+import Image9 from "../Assets/image9.jpg"
+import Image10 from "../Assets/image10.jpg"
+import Image11 from "../Assets/image11.jpg"
+import Image12 from "../Assets/image12.jpg"
+import Image13 from "../Assets/image13.jpg"
+import Image14 from "../Assets/image14.jpg"
+import Image15 from "../Assets/image15.jpg"
+import Image16 from "../Assets/image16.jpg"
+import Image17 from "../Assets/image17.jpg"
+import Image18 from "../Assets/image18.jpg"
+import Image19 from "../Assets/image19.jpg"
+import Image20 from "../Assets/image20.jpg"
 
 
 const Origins = () => {
@@ -52,64 +72,64 @@ const Origins = () => {
     <div className='w-full'>
       <div className='halloffame_grid relative bg-slate-800 grid grid-cols-8 grid-rows-20 gap-2 overflow-hidden z-40'>
         <div className='elem col-span-1 row-span-1' style={{"--r": 1 , "--c": 3 }} >
-          <img src="../public/image1.jpg" alt="" />
+          <img src={Image1} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 1 , "--c": 7 }} >
-          <img src="../public/image2.jpg" alt="" />
+          <img src={Image2} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 2 , "--c": 2 }} >
-          <img src="../public/image3.jpg" alt="" />
+          <img src={Image3} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 2 , "--c": 6 }} >
-          <img src="../public/image4.jpg" alt="" />
+          <img src={Image4} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 3 , "--c": 4 }} >
-          <img src="../public/image5.jpg" alt="" />
+          <img src={Image5} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 3 , "--c": 8 }} >
-          <img src="../public/image6.jpg" alt="" />
+          <img src={Image6} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 4 , "--c": 1 }} >
-          <img src="../public/image7.jpg" alt="" />
+          <img src={Image7} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 4 , "--c": 4 }} >
-          <img src="../public/image8.jpg" alt="" />
+          <img src={Image8} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 5 , "--c": 2 }} >
-          <img src="../public/image9.jpg" alt="" />
+          <img src={Image9} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 5 , "--c": 6 }} >
-          <img src="../public/image10.jpg" alt="" />
+          <img src={Image10} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 6 , "--c": 3 }} >
-          <img src="../public/image11.jpg" alt="" />
+          <img src={Image11} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 6 , "--c": 7 }} >
-          <img src="../public/image12.jpg" alt="" />
+          <img src={Image12} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 7 , "--c": 5 }} >
-          <img src="../public/image13.jpg" alt="" />
+          <img src={Image13} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 7 , "--c": 8 }} >
-          <img src="../public/image14.jpg" alt="" />
+          <img src={Image14} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 8 , "--c": 1 }} >
-          <img src="../public/image15.jpg" alt="" />
+          <img src={Image15} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 8 , "--c": 2 }} >
-          <img src="../public/image16.jpg" alt="" />
+          <img src={Image16} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 9 , "--c": 2 }} >
-          <img src="../public/image17.jpg" alt="" />
+          <img src={Image17} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 9 , "--c": 6 }} >
-          <img src="../public/image18.jpg" alt="" />
+          <img src={Image18} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 10 , "--c": 3 }} >
-          <img src="../public/image19.jpg" alt="" />
+          <img src={Image19} alt="" />
         </div>
         <div className='elem col-span-1 row-span-1' style={{"--r": 10 , "--c": 7 }} >
-          <img src="../public/image20.jpg" alt="" />
+          <img src={Image20} alt="" />
         </div>
         <div className=' absolute font-primary hidden sm:block sm:text-4xl font-light text-primary top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
           Excellence, Resilience, Immortality

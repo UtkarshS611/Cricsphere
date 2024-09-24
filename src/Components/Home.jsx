@@ -3,6 +3,10 @@ import { BsStars } from "react-icons/bs";
 import Cards from './Cards';
 import { useLocation } from 'react-router-dom';
 import Header from './Header';
+import highlights1 from "../Assets/highlights1.jpg"
+import highlights2 from "../Assets/highlights2.jpg"
+import highlights3 from "../Assets/highlights3.jpg"
+import highlights4 from "../Assets/highlights4.jpg"
 
 const Home = () => {
 
@@ -53,7 +57,7 @@ const Home = () => {
       <div className='mt-6'>
         <div className='grid grid-cols-2 w-[80vw] mx-auto'>
           <div className='w-[25vw] m-auto'>
-            <img src="../public/highlights1.jpg" alt="" />
+            <img src={highlights1} alt="" />
           </div>
           <div className='flex flex-col justify-center gap-6 px-16'>
             <h2 className='text-5xl font-medium'>
@@ -74,12 +78,12 @@ const Home = () => {
             </p>
           </div>
           <div className='w-[25vw] m-auto'>
-            <img src="../public/highlights2.jpg" alt="" />
+            <img src={highlights2} alt="" />
           </div>
         </div>
         <div className='grid grid-cols-2 w-[80vw] mx-auto'>
           <div className='w-[25vw] m-auto'>
-            <img src="../public/highlights3.jpg" alt="" />
+            <img src={highlights3} alt="" />
           </div>
           <div className='flex flex-col justify-center  gap-6 px-16'>
             <h2 className='text-5xl font-medium'>
@@ -100,7 +104,7 @@ const Home = () => {
             </p>
           </div>
           <div className='w-[25vw] m-auto'>
-            <img src="../public/highlights4.jpg" alt="" />
+            <img src={highlights4} alt="" />
           </div>
         </div>
       </div>
