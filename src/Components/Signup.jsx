@@ -81,7 +81,7 @@ const Signup = ({ setIsLoggedIn }) => {
       )}
       </div>
       <div className='h-screen w-[50%] hidden sm:flex justify-center relative items-center bg-blue-50'>
-        <img src="../public/formImage.png" className='border-[2px] border-black rounded-[3rem] ml-[10vh]' width={1000} alt="" />
+        <img src="../Assets/FormImage.png" className='border-[2px] border-black rounded-[3rem] ml-[10vh]' width={1000} alt="" />
       </div>
     </div>
   );
