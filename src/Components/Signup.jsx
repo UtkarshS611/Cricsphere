@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Form, useNavigate } from 'react-router-dom';
+import FormImage from "../Assets/FormImage.png"
 
 const Signup = ({ setIsLoggedIn }) => {
   const [step, setStep] = useState(1);
@@ -81,7 +82,7 @@ const Signup = ({ setIsLoggedIn }) => {
       )}
       </div>
       <div className='h-screen w-[50%] hidden sm:flex justify-center relative items-center bg-blue-50'>
-        <img src="./Assets/FormImage.png" className='border-[2px] border-black rounded-[3rem] ml-[10vh]' width={1000} alt="" />
+        <img src={FormImage} className='border-[2px] border-black rounded-[3rem] ml-[10vh]' width={1000} alt="" />
       </div>
     </div>
   );
