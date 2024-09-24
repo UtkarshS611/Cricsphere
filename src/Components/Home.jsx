@@ -10,14 +10,14 @@ const Home = () => {
   const formData = location.state;
 
   return (
-    <section className='h-[500vh]'>
+    <section>
 
       <Header/>
 
       <div className='flex justify-center mt-8 font-primary'>
         <div className='px-14 py-2 rounded-full font-medium flex items-center gap-2 border-[0.5px] bg-[#e3d5ca4e] border-[#bb9457]'>
           <BsStars className='text-2xl' />
-          Welcome, {formData?.firstname || 'Utkarsh'}
+          Welcome, {formData?.firstname || 'Guest'}
         </div>
       </div>
       <div className='tracking-wide text-4xl md:text-7xl uppercase flex flex-col items-center py-8 gap-2 md:gap-10 font-[Anton]'>
@@ -104,6 +104,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <footer class="py-14 text-xl">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2024 Cricket Origins. All rights reserved.</p>
+        </div>
+      </footer>
     </section>
   )
 }

@@ -34,14 +34,14 @@ const Header = ({ setIsLoggedIn }) => {
           <p className='hidden sm:block'>Menu</p>
           <CgMenuMotion/>
         </div>
-        <nav className={`${isMenuOpen? "translate-x-0" : "translate-x-[100%]"} z-40 duration-200 bg-[#e3d5ca] absolute right-0 top-0 h-screen flex flex-col gap-4 w-[50%] md:w-[30vw] lg:w-[20vw] items-start px-4 justify-center`}>
+        <nav className={`${isMenuOpen? "translate-x-0" : "translate-x-[100%]"} z-40 duration-200  bg-[#fff] text-xl absolute right-0 top-0 h-screen flex flex-col gap-8 w-[50%] md:w-[30vw] lg:w-[20vw] items-start px-4 justify-center`}>
           <button onClick={handleMenuToggle} className='border-2 border-black rounded-lg p-2 absolute right-[1rem] top-[1.5rem]'>
             <IoMdClose/>
           </button>
           <Link onClick={handleMenuToggle} to="/home" className="px-2">Home</Link>
           <Link onClick={handleMenuToggle} to="/hall-of-fame" className="px-2">Hall of fame</Link>
           <Link onClick={handleMenuToggle} to="/Origins" className="px-2">Origins</Link>
-          <button onClick={handleLogout} className="bg-red-500 px-4 py-2">Logout</button>
+          <button onClick={handleLogout} className="bg-red-200 rounded-full px-8 py-2 tracking-wide">Logout</button>
         </nav>
     </header>
   );
