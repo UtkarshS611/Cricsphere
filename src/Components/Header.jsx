@@ -39,8 +39,8 @@ const Header = ({ setIsLoggedIn }) => {
             <IoMdClose/>
           </button>
           <Link onClick={handleMenuToggle} to="/home" className="px-2">Home</Link>
-          <Link onClick={handleMenuToggle} to="/origins" className="px-2">Origins</Link>
-          <Link onClick={handleMenuToggle} to="/hall-of-fame" className="px-2">Hall of Fame</Link>
+          <Link onClick={handleMenuToggle} to="/hall-of-fame" className="px-2">Hall of fame</Link>
+          <Link onClick={handleMenuToggle} to="/Origins" className="px-2">Origins</Link>
           <button onClick={handleLogout} className="bg-red-500 px-4 py-2">Logout</button>
         </nav>
     </header>
